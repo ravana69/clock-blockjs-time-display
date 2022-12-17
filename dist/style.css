@@ -1,0 +1,68 @@
+time {
+  float: left;
+}
+
+.clockblock {
+  float: left;
+}
+
+.clockblock__digits {
+  float: left;
+  margin: 1.2vw;
+}
+
+.clockblock__digit {
+  float: left;
+}
+
+.clockblock__digit--tens {
+  margin-right: 0.5vw;
+}
+
+.clockblock__diode {
+  float: left;
+  margin: 0.2vw;
+  width: 0.8vw;
+  height: 0.8vw;
+  background-color: #00ff00;
+  border-radius: 0.075em;
+  opacity: 0.1;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.clockblock__diode.active {
+  opacity: 1;
+}
+
+.clockblock__digits--hours .clockblock__digit--tens {
+  width: 1.2vw;
+}
+.clockblock__digits--hours .clockblock__digit--units {
+  width: 3.6vw;
+}
+
+.clockblock__digits--minutes .clockblock__digit--tens {
+  width: 2.4vw;
+}
+.clockblock__digits--minutes .clockblock__digit--units {
+  width: 3.6vw;
+}
+
+.clockblock__digits--seconds .clockblock__digit--tens {
+  width: 2.4vw;
+}
+.clockblock__digits--seconds .clockblock__digit--units {
+  width: 3.6vw;
+}
+
+/**/
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
